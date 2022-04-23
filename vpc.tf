@@ -31,7 +31,7 @@ resource "aws_subnet" "calc-pub" {
 }
 
 #PRIVATE SUBNET
-resource "aws_subnet" "hdfc-pvt" {
+resource "aws_subnet" "calc-pvt" {
   vpc_id     = aws_vpc.calc.id
   cidr_block = "10.0.4.0/22"
   
